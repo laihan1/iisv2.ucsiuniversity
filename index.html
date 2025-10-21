@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Examination Token</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      color: #333;
+    }
+
+/* ===== HEADER SECTION ===== */
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* White top bar */
+.top-bar {
+  background-color: #ffffff; /* white */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.top-bar img {
+  height: 40px;
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Red banner below */
+.red-bar {
+  background-color: #c82121; /* red */
+  height: 45px; /* adjust thickness */
+  width: 100%;
+}
+
+
+    /* ===== MAIN ===== */
+    main {
+      max-width: 1150px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+      padding: 35px;
+    }
+    h1 {
+      font-size: 22px;
+      margin-top: 0;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    /* ===== TWO COLUMN LAYOUT ===== */
+    .info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    /* ===== PHOTO CARD ===== */
+    .photo-box {
+      flex: 1 1 240px;
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
+      text-align: center;
+      padding: 18px;
+      background: #fafafa;
+    }
+    .photo-box h3 {
+      background: #f1f1f1;
+      margin: -18px -18px 15px -18px;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      padding: 10px;
+    }
+    .photo-box img {
+      height: 125px;
+      width: 90px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    /* ===== INFO TABLE ===== */
+    .details-box {
+      flex: 1 1 700px;
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px dashed #e5e5e5;
+    }
+    .detail-row label {
+      color: #555;
+      font-weight: 600;
+    }
+    .detail-row span {
+      color: #000;
+    }
+
+    /* ===== TABLE ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f2f5f8;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .footer-row {
+      text-align: right;
+      font-size: 13px;
+      color: #666;
+      padding-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      margin: 20px 0 40px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      main {
+        padding: 20px;
+      }
+      .info-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <img
+      src="https://iisv2.ucsiuniversity.edu.my/apex/iisv2/r/files/static/v286/ucsilogo.png"
+      alt="UCSI Logo"
+    />
+     <a href="#">Enrollment Job List</a>
+    </div>
+    <div class="red-bar"></div>
+  </header>
+
+
+  <main>
+    <h1>Supplementary Examination Token</h1>
+
+    <div class="info-wrapper">
+      <!-- Photo Card -->
+      <div class="photo-box">
+        <h3>Photo</h3>
+        <img
+          src="https://iisv2.ucsiuniversity.edu.my/apex/iisv2/pluto/files/profile-img/F59DE266FF683083D2CB1DC2FC20E04AB741FCDB"
+          alt="Student Photo"
+        />
+        <p>Name: <strong>Guo Xuanyuan</strong></p>
+      </div>
+
+      <!-- Info Card -->
+      <div class="details-box">
+        <div class="detail-row">
+          <label>Student Name</label><span>Guo Xuanyuan</span>
+        </div>
+        <div class="detail-row">
+          <label>Student Number</label><span>1002164189</span>
+        </div>
+        <div class="detail-row">
+          <label>Semester</label><span>2025-05</span>
+        </div>
+        <div class="detail-row">
+          <label>Fee Owing</label><span>RM 0</span>
+        </div>
+        <div class="detail-row">
+          <label>Department</label><span>Department of Mass Communication</span>
+        </div>
+        <div class="detail-row">
+          <label>Faculty Name</label
+          ><span>Faculty of Social Sciences and Liberal Arts</span>
+        </div>
+        <div class="detail-row">
+          <label>Programme Name</label
+          ><span>Bachelor of Arts (Hons) in Mass Communication</span>
+        </div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Subject Name</th>
+          <th>Subject Code</th>
+          <th>Study Intake</th>
+          <th>Exam Schedule</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Media Law And Ethics</td>
+          <td>SM319</td>
+          <td>2025-05</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer-row">1 - 1</div>
+  </main>
+
+  <footer>
+    <p>Generated for demonstration | Design inspired by UCSI layout</p>
+  </footer>
+</body>
+</html>
